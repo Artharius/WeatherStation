@@ -5,6 +5,7 @@ After obtaining a <WUNDERGROUND API KEY> from Weather underground (there are fre
 You can query your Personal weather station (PWS) by using the <PWS ID>
 and get the data in Json format for further usage, like plotting your weather data
 '''
+
 myurl        = 'http://api.wunderground.com/api/<WUNDERGROUND API KEY>/conditions/settings/q/pws:<PWS ID>.json'
 
 def get_report():
