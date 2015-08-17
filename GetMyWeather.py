@@ -1,14 +1,11 @@
-import time
-from datetime import datetime
 import urllib2
 import json
 '''
 After obtaining a <WUNDERGROUND API KEY> from Weather underground (there are free plans)
 You can query your Personal weather station (PWS) by using the <PWS ID>
-and get the data in Json format for further usage.
+and get the data in Json format for further usage, like plotting your weather data
 '''
 myurl        = 'http://api.wunderground.com/api/<WUNDERGROUND API KEY>/conditions/settings/q/pws:<PWS ID>.json'
-outurlprefix = 'http://wow.metoffice.gov.uk/automaticreading?'
 
 def get_report():
     rettup = []
